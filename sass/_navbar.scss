@@ -7,10 +7,10 @@ $secondary-color: #3d3f3c;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 20px 40px;
+  padding: 20px 120px;
+  transition: padding 0.3s ease-in-out;
 
   &_logo {
-    cursor: pointer;
     display: flex;
     flex-direction: row;
     gap: 16px;
@@ -18,16 +18,18 @@ $secondary-color: #3d3f3c;
     a {
       text-decoration: none;
       color: white;
+      cursor: pointer;
     }
 
     &_first {
-      width: 30px;
-      height: 30px;
+      width: 40px;
+      height: 40px;
       background-color: $primary-color;
       border-radius: 50%;
       display: flex;
       justify-content: center;
       align-items: center;
+      text-align: center;
       font-size: 18px;
       color: wheat;
     }
@@ -58,6 +60,44 @@ $secondary-color: #3d3f3c;
 
   &_menu-icon {
     display: none; // initially hide the menu icon
+  }
+
+  &_social-links {
+    display: flex;
+    gap: 32px;
+    a {
+      text-decoration: none;
+      cursor: pointer;
+
+      // &_icon {
+      //   color: #ff6000;
+      //   transition: transform 0.3s ease-in-out;
+      // }
+
+      // &_icon:hover {
+      //   transform: rotate(180deg);
+      // }
+    }
+
+    @media (max-width: 900px) {
+      display: none;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    padding: 20px 60px;
+  }
+
+  @media (max-width: 800px) {
+    padding: 20px 30px;
+  }
+
+  @media (max-width: 600px) {
+    padding: 20px 15px;
+  }
+
+  @media (max-width: 400px) {
+    padding: 20px 10px;
   }
 }
 
