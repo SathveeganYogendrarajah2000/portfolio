@@ -1,0 +1,19 @@
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px 40px;
+  &_logo {
+    cursor: pointer;
+  }
+  &_links {
+    a {
+      cursor: pointer;
+      padding: 0 40px;
+    }
+    a.active {
+      color: #302b2b;
+    }
+  }
+}

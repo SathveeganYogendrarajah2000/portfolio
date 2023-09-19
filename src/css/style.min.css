@@ -1,0 +1,1 @@
+.navContainer{display:flex;justify-content:space-between;align-items:center;width:100%;padding:20px 40px}.navContainer_logo{cursor:pointer}.navContainer_links a{cursor:pointer;padding:0 40px}.navContainer_links a.active{color:#302b2b}*{box-sizing:border-box;margin:0;padding:0;font-family:"popins",sans-serif}body{background-color:#fff}/*# sourceMappingURL=style.min.css.map */
