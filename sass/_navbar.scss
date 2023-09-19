@@ -1,19 +1,81 @@
+$primary-color: #ff6000;
+$secondary-color: #3d3f3c;
+
 .navContainer {
+  background-color: $secondary-color;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   padding: 20px 40px;
+
   &_logo {
     cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+
+    a {
+      text-decoration: none;
+      color: white;
+    }
+
+    &_first {
+      width: 30px;
+      height: 30px;
+      background-color: $primary-color;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 18px;
+      color: wheat;
+    }
+
+    &_name {
+      font-size: 18px;
+      color: wheat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
   }
+
   &_links {
     a {
       cursor: pointer;
       padding: 0 40px;
+      color: wheat;
+      text-decoration: none;
     }
     a.active {
-      color: #302b2b;
+      color: $primary-color;
     }
+  }
+
+  &_active {
+  }
+
+  &_menu-icon {
+    display: none; // initially hide the menu icon
+  }
+}
+
+/* Media query for screens with a max-width of 800px */
+@media (max-width: 800px) {
+  .navContainer_links {
+    display: none; /* Hide full navigation on small screens */
+  }
+
+  .navContainer_menu-icon {
+    display: block; /* Show the menu icon on small screens */
+    font-size: 24px;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 432px) {
+  .navContainer_logo_name {
+    display: none;
   }
 }
