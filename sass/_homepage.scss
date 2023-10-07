@@ -1,0 +1,55 @@
+.homeContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: linear-gradient(to bottom, #f5deb3, white);
+  background-color: #f5deb3;
+  padding: 40px;
+  border-radius: 25px 25px 0 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin: 0 40px;
+
+  &_hero {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 0 20px;
+
+    &_details {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin: 72px 0;
+      text-align: right;
+
+      &_name {
+        font-size: 38px;
+      }
+
+      &_degree {
+        font-weight: 400;
+      }
+
+      &_techStack {
+        text-align: center;
+        margin-top: 16px;
+        font-weight: bold;
+        span {
+
+        }
+      }
+    }
+
+    &_pic {
+      width: 50%;
+
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        opacity: 0.9;
+      }
+    }
+  }
+}
