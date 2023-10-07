@@ -17,11 +17,32 @@
 
     &_details {
       width: 50%;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin: 72px 0;
+      text-align: right;
+
+      &_name {
+        font-size: 38px;
+      }
+
+      &_degree {
+        font-weight: 400;
+      }
+
+      &_techStack {
+        text-align: center;
+        margin-top: 16px;
+        font-weight: bold;
+        span {
+
+        }
+      }
     }
 
     &_pic {
       width: 50%;
-      // background-image: url("src\assets\images\Me01bgRemoved.png");
 
       img {
         width: 100%;
